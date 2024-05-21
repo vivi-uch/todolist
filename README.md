@@ -36,8 +36,8 @@ The todo list application allows users to add, delete,edit and view tasks. It al
 
 ### Links
 
-- Solution URL: https://github.com/vivi-uch/TODO-LIST
-- Live Site URL:https://vivi-uch.github.io/TODO-LIST/
+- Solution URL: https://github.com/vivi-uch/todolist
+- Live Site URL: https://vivi-uch.github.io/todolist/
 
 ## My process
 
