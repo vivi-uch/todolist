@@ -1,0 +1,254 @@
+body{
+    background-image: url("images/nice.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: "Raleway", sans-serif;
+    color: #fff;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Greeting Section */
+.greeting{
+    display: flex;
+    margin-top: 10px;  
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* width: 1000px; */
+}
+.greeting p{
+    color: #fff; 
+    font-weight: 700;  
+    font-size: 24px; 
+}
+.greeting #icon{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+
+#log-out{
+  padding: 0.4rem 1rem;
+  margin-left: 90%;
+  margin-top: 10px;
+  border-radius: 10px;
+  background: transparent;
+  border: 1px solid #B197FC;
+  color: #fff;
+  /* margin-right: 10%; */
+}
+
+/* container section*/
+.container{
+    width: 75%;
+    padding: 20px;
+    border: 2px solid #e6b7eca1;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+h1{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px
+}
+
+/* input container */
+.input-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.input-container input{
+    width: 85%;
+    border-radius: 100px;
+    padding: 10px;
+    background: transparent;
+    border: 2px solid #fff;
+    font-size: 19px;
+    color: #fff;
+}
+input:checked + .text-area span{
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.input-container button{
+    margin-left: 10px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* menu */
+.menu{
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+}
+.menu div{
+    padding: 10px 20px;
+    border: 1px solid #e6b7eca1;
+    border-radius: 30px;
+    color: #fff;
+    text-align: center;
+    width: 20%;
+    cursor: pointer;
+}
+.menu div:Active, .menu div:hover{
+  background-color: #a290a4a1;
+}
+.menu span::before{
+  content: "(";
+}
+.menu span::after{
+  content: ")";
+}
+/* todo-container section */
+.todo-container{
+    height: 500px;
+    overflow: overlay;
+}
+.todo-container::-webkit-scrollbar-thumb:hover{
+    background: #999;
+}
+.todo-container ul{
+    list-style: none;
+    text-align: left;
+    color: #fff;
+    font-weight: 500;
+}
+/* .todo li{
+    display: flex;
+} */
+.todo-container img{
+    width: 100%;
+}
+/* .todo-container li{
+  margin-right: 200px;
+} */
+
+/* li{
+  padding: 10px 10px 20px;
+  border: 1px solid #e6b7eca1;
+  border-radius: 8px;
+  width: 90%;
+  margin: 1%;
+}
+.todo{
+  display: flex;
+
+}
+.todo input .todo span{
+  position: relative;
+  margin-left: 2px;
+  word-wrap: break-word;
+}
+.todo .delete-btn{
+  margin-right: 2px;
+} */
+
+
+.todo-item {
+  border: 1px solid #B197FC;
+  padding: 10px;
+  margin-bottom: 10px;
+  list-style: none;
+  /* width: 10em; */
+}
+
+
+.todo-content {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.todo {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+
+.todo input[type="checkbox"] {
+  margin-right: 10px; 
+  /* width: 20px; */
+}
+
+.text-area{
+  width: 90%;
+  word-wrap: break-word;
+  text-align: left;
+}
+.not-button{
+  display: flex;
+  width:93%
+}
+.delete-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  /* position: absolute;
+  right: 180px; */
+}
+
+.edit-btn{
+  border: none;
+  background: none;
+  cursor: pointer;
+  /* position: absolute;
+  right: 200px; */
+}
+.created-date {
+  font-size: 12px;
+  color: hsl(0, 2%, 87%);
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+
+
+/* LIght theme and dark theme */
+.dark-theme{
+  background-image: url("/images/dark2\ theme.jpg");
+}
+/* Menu Section */
+
+/* --light-white: #fff; */
+/* --dark-black: #000; */
+/* --light-purple: #e6b7eca1; */
+/* --dark-purple: #0b000ca1; */
+/* --dark-box-shadow: rgb(5, 5, 5)2e4a1; */
+/* --light-box-shadow: #e2d2e4a1; */
+
+/* ONly WORKING FOR like tablets */
+@media screen and (max-width: 768px) {
+  .menu div{
+    padding: 10 20px;
+    border: 1px solid #e6b7eca1;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    width: 20%;
+    cursor: pointer;
+    font-size: 14px;
+  }
+}
+
+/* phone? sha working for like phones */
+@media screen and (max-width: 320px) {
+
+}
+
+/* when opening inspect */
+@media screen and (max-width: 1025px) {
+ 
+}

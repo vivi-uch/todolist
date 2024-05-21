@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todolist</title>
+    
+    <!-- css -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/dcb37cc1ad.js" crossorigin="anonymous"></script>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <main>
+        <button id="log-out">LOG OUT</button>
+        <div class="greeting">
+            <p id="name"></p>
+            <img src="/images/moon.png" id="icon" alt="moon">
+        </div>
+        <div class="container">
+            <h1>TODOLIST <i class="fa-solid fa-list"></i></h1>
+            <!-- <span><i class="fa-solid fa-circle" style="color: #000000;"></i></span> -->
+            
+            <div class="input-container">
+                <input type="text" placeholder="Add a new task.." id="input">
+                <button id="add-btn"><i class="fa-solid fa-circle-plus fa-3x" style="color: #B197FC;"></i></button>
+            </div>
+        
+            <div class="menu">
+                <div id="completed">Completed <span id="complete-num"></span></div>
+                <div id="pending">Pending <span id="pending-num"></span></div>
+                <div class="delete-all">Delete All</div>
+            </div>
+
+            <div class="todo-container">
+                <ul class="todo-list" id="todos"></ul>
+                <img src="images/idle2.png" id="blank-img" alt="idle-img">
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
