@@ -354,12 +354,12 @@ pending.addEventListener("click",()=>{
 
 // darkmode or lightmode
 theme.onclick = function(){
-    let check = document.body.classList.toggle("dark_theme");
-    if(document.body.classList.contains("dark_theme")){
-        icon.src = "/images/sun.png";
+    let check = document.body.classList.toggle("dark-theme");
+    if(document.body.classList.contains("dark-theme")){
+        icon.src = "images/sun.png";
     }
     else{
-        icon.src = "/images/moon.png";
+        icon.src = "images/moon.png";
     }
 }
 
